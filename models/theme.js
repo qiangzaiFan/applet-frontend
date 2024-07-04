@@ -4,7 +4,9 @@
  */
 
 import { Http } from '../utils/http'
+import { data as themesAData } from '../assets/json/wxshop/themeJs.js'
 
+console.log('---themesAData,', themesAData)
 class Theme {
   static locationA = 't-1'
   static locationE = 't-2'
