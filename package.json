@@ -1,0 +1,17 @@
+{
+  "name": "sleeve",
+  "version": "0.1.0",
+  "description": "医美小程序（前端）",
+  "explain": "仅供自己使用,禁止商用",
+  "main": "app.js",
+  "detail": "包含小程序、vue、java和SpringBoot",
+  "author": "阿强",
+  "dependencies": {
+    "lin-ui": "0.6.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "https://class.imooc.com/sale/javafullstack"
+}
