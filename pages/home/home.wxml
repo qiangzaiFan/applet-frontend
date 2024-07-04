@@ -1,9 +1,7 @@
-<l-loadmore show
-            end-text="- 7七月作品 -"
-            type="{{loadingType}}">
-    <view slot="content" class="container">
-        <image class="top-theme" src="{{themeA.entrance_img}}"></image>
-        <!-- <swiper class="swiper"
+<l-loadmore show end-text="- 7七月作品 -" type="{{ loadingType }}">
+  <view slot="content" class="container">
+    <image class="top-theme" src="{{ themeA.entrance_img }}"></image>
+    <!-- <swiper class="swiper"
                 indicator-dots
                 indicator-active-color="#157658"
                 autoplay
@@ -34,6 +32,6 @@
         <view class="spu-bottom">
             <image class="title-spu-bottom" src="/imgs/home/title@interest.png"></image>
             <l-water-flow generic:l-water-flow-item="s-spu-preview"></l-water-flow>
-        </view> -->
-    </view>
+        </view>  -->
+  </view>
 </l-loadmore>
