@@ -6,7 +6,6 @@
 import { Http } from '../utils/http'
 import { data as themesAData } from '../assets/json/wxshop/themeJs.js'
 
-console.log('---themesAData,', themesAData)
 class Theme {
   static locationA = 't-1'
   static locationE = 't-2'
@@ -28,7 +27,10 @@ class Theme {
   }
 
   getHomeLocationA() {
-    return this.themes.find(t => t.name === Theme.locationA)
+    const list = JSON.parse(JSON.stringify(themesAData))
+    console.log('---themesAData,', list)
+    return list[0]
+    // return this.themes.find(t => t.name === Theme.locationA)
   }
 
   getHomeLocationE() {
