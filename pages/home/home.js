@@ -14,6 +14,7 @@ Page({
     themeA: null,
     themeE: null,
     bannerB: null,
+    bannerBImgList: ['../../imgs/home/topBannerCompress2.png', '../../imgs/home/topBannerCompress1.png'],
     grid: [],
     activityD: null,
     spuPaging: null,
@@ -52,7 +53,7 @@ Page({
 
     // const themeF = theme.getHomeLocationF()
 
-    // const bannerB = await Banner.getHomeLocationB()
+    const bannerB = await Banner.getHomeLocationB()
     // const grid = await Category.getHomeLocationC()
     // const activityD = await Activity.getHomeLocationD()
 
@@ -61,15 +62,16 @@ Page({
     // const themeH = theme.getHomeLocationH()
 
     this.setData({
-      themeA
-      // bannerB,
+      themeA,
+      bannerB,
       // grid,
       // activityD,
       // themeE,
       // themeESpu,
       // themeF,
       // bannerG,
-      // themeH
+      // themeH,
+      loadingType: 'end'
     })
   },
 

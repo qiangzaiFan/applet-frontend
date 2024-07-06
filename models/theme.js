@@ -28,7 +28,6 @@ class Theme {
 
   getHomeLocationA() {
     const list = JSON.parse(JSON.stringify(themesAData))
-    console.log('---themesAData,', list)
     return list[0]
     // return this.themes.find(t => t.name === Theme.locationA)
   }

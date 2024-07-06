@@ -1,20 +1,15 @@
-<l-loadmore show end-text="- 7七月作品 -" type="{{ loadingType }}">
+<l-loadmore show end-text="- 趋势医美 -" type="{{ loadingType }}">
   <view slot="content" class="container">
-    <image class="top-theme" src="{{ themeA.entrance_img }}"></image>
-    <!-- <swiper class="swiper"
-                indicator-dots
-                indicator-active-color="#157658"
-                autoplay
-                circular>
-            <block wx:for="{{bannerB.items}}" wx:key="{{index}}">
-                <swiper-item>
-                    <image class="swiper" src="{{item.img}}"></image>
-                </swiper-item>
-            </block>
-        </swiper>
+    <image class="top-theme" src="../../imgs/home/topThemeCompress.png"></image>
+    <swiper class="swiper" indicator-dots indicator-active-color="#157658" autoplay circular>
+      <block wx:for="{{ bannerB.items }}" wx:key="index">
+        <swiper-item>
+          <image class="swiper" src="{{ bannerBImgList[index] }}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
 
-
-        <s-category-grid grid="{{grid}}"></s-category-grid>
+    <!--   <s-category-grid grid="{{grid}}"></s-category-grid>
         <image class="activity" src="{{activityD.entrance_img}}"></image>
         <s-spu-scroll
                 theme="{{themeE}}"
