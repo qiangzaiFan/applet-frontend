@@ -9,8 +9,8 @@
       </block>
     </swiper>
 
-    <!--   <s-category-grid grid="{{grid}}"></s-category-grid>
-        <image class="activity" src="{{activityD.entrance_img}}"></image>
+     <s-category-grid grid="{{grid}}"></s-category-grid>
+       <!--   <image class="activity" src="{{activityD.entrance_img}}"></image>
         <s-spu-scroll
                 theme="{{themeE}}"
                 spu-list="{{themeESpu}}"
