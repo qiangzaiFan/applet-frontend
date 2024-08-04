@@ -44,22 +44,22 @@ Page({
     // await theme.getThemes()
 
     const themeA = theme.getHomeLocationA()
-    // const themeE = theme.getHomeLocationE()
-    // let themeESpu = []
+    let themeE = theme.getHomeLocationE()
+    themeE.title_img =   '../../imgs/home/topBannerCompress2.png';
+    let themeESpu = []
 
-    // if (themeE.online) {
-    //     const data = await Theme.getHomeLocationESpu()
-    //     if (data) {
-    //         themeESpu = data.spu_list.slice(0, 8)
-    //     }
-    // }
+    if (themeE.online) {
+        const data = await Theme.getHomeLocationESpu()
+        if (data) {
+            themeESpu = data.spu_list.slice(0, 8)
+        }
+    }
 
     // const themeF = theme.getHomeLocationF()
 
     const bannerB = await Banner.getHomeLocationB()
     const grid = await Category.getHomeLocationC()
-    // const activityD = await Activity.getHomeLocationD()
-
+    const activityD = await Activity.getHomeLocationD()
     // const bannerG = await Banner.getHomeLocationG()
 
     // const themeH = theme.getHomeLocationH()
@@ -68,9 +68,9 @@ Page({
       themeA,
       bannerB,
       grid,
-      // activityD,
-      // themeE,
-      // themeESpu,
+      activityD,
+      themeE,
+      themeESpu,
       // themeF,
       // bannerG,
       // themeH,

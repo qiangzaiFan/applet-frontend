@@ -18,6 +18,7 @@
   height: 310rpx;
   display: flex;
   margin-bottom: 20rpx;
+  background-color: #fff;
 }
 
 .quality {

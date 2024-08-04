@@ -1,4 +1,4 @@
-{
+const data = {
     "id": 2,
     "title": "夏日好礼送不停",
     "entrance_img": "http://i2.sleeve.7yue.pro/m14.png",
@@ -7,3 +7,5 @@
     "start_time": null,
     "end_time": null
 }
+
+export { data }

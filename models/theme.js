@@ -4,7 +4,8 @@
  */
 
 import { Http } from '../utils/http'
-import { data as themesAData } from '../assets/json/wxshop/themeJs.js'
+import { data as themesAData } from '../assets/json/wxshop/names.js'
+import { data as themesEDataSPU } from '../assets/json/wxshop/maoyi.js'
 
 class Theme {
   static locationA = 't-1'
@@ -33,7 +34,9 @@ class Theme {
   }
 
   getHomeLocationE() {
-    return this.themes.find(t => t.name === Theme.locationE)
+    let list = JSON.parse(JSON.stringify(themesAData))
+    return list[1]
+    // return this.themes.find(t => t.name === Theme.locationE)
   }
 
   getHomeLocationF() {
@@ -45,13 +48,16 @@ class Theme {
   }
 
   static getHomeLocationESpu() {
+    
     return Theme.getThemeSpuByName(Theme.locationE)
   }
 
   static getThemeSpuByName(name) {
-    return Http.request({
-      url: `theme/name/${name}/with_spu`
-    })
+    const data = JSON.parse(JSON.stringify(themesEDataSPU))
+    return data
+    // return Http.request({
+    //   url: `theme/name/${name}/with_spu`
+    // })
   }
 }
 
