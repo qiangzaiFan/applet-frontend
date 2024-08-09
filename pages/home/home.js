@@ -45,17 +45,17 @@ Page({
 
     const themeA = theme.getHomeLocationA()
     let themeE = theme.getHomeLocationE()
-    themeE.title_img =   '../../imgs/home/topBannerCompress2.png';
+    themeE.title_img = '../../imgs/home/topBannerCompress2.png'
     let themeESpu = []
 
     if (themeE.online) {
-        const data = await Theme.getHomeLocationESpu()
-        if (data) {
-            themeESpu = data.spu_list.slice(0, 8)
-        }
+      const data = await Theme.getHomeLocationESpu()
+      if (data) {
+        themeESpu = data.spu_list.slice(0, 8)
+      }
     }
 
-    // const themeF = theme.getHomeLocationF()
+    const themeF = theme.getHomeLocationF()
 
     const bannerB = await Banner.getHomeLocationB()
     const grid = await Category.getHomeLocationC()
@@ -71,7 +71,7 @@ Page({
       activityD,
       themeE,
       themeESpu,
-      // themeF,
+      themeF,
       // bannerG,
       // themeH,
       loadingType: 'end'

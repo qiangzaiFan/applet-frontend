@@ -40,7 +40,10 @@ class Theme {
   }
 
   getHomeLocationF() {
-    return this.themes.find(t => t.name === Theme.locationF)
+    let list = JSON.parse(JSON.stringify(themesAData))
+    list[2].entrance_img = '../../imgs/home/topBannerCompress2.png'
+    return list[2]
+    // return this.themes.find(t => t.name === Theme.locationF)
   }
 
   getHomeLocationH() {
@@ -48,7 +51,6 @@ class Theme {
   }
 
   static getHomeLocationESpu() {
-    
     return Theme.getThemeSpuByName(Theme.locationE)
   }
 
