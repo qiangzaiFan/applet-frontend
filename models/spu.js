@@ -12,6 +12,20 @@ class Spu {
     return false
   }
 
+  //1. -条数据没有空
+  //2. 最后一页，还有没有更多的数据
+  //3. 累加100 1-2021-40 ...., setData 重新渲染页面
+  //4.非分页数据: a.正在加载loading b.空
+  //  分页数据: a.正在加载b. 加载完成c.没有更多数据
+  //5. 上滑页面触底加载避免用户重复发请求redis 数据锁
+  //按钮button 防抖截流。禁用倒计时模态loading
+  // start count 10,0,10,20
+  // 类 函数 ES6 class JS 主流语言 思维方式 OO 类
+  // class JS 面向，模拟 00 class 统一
+
+  // 1-20 21-40 41-60
+  // 1-40 1-60
+
   static getDetail(id) {
     return Http.request({
       url: `spu/id/${id}/detail`

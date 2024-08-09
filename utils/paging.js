@@ -16,7 +16,7 @@ class Paging {
   req
   locker = false
   url
-  moreData = true
+  moreData = true // 是否是最后一页，false 就是最后一页
   accumulator = []
 
   constructor(req, count = 10, start = 0) {
