@@ -1,8 +1,6 @@
 /**
- * @作者 阿强
- *
+ *   @作者 强仔
 
- * @创建时间 2024-10-28 03:53
  */
 import { SkuCode } from './sku-code'
 import { CellStatus } from '../../core/enum'

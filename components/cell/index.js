@@ -19,6 +19,7 @@ Component({
      */
     methods: {
         onTap(event) {
+            console.log(this.properties.cell)
             this.triggerEvent('celltap', {
                 cell: this.properties.cell,
                 x:this.properties.x,

@@ -1,7 +1,4 @@
 Component({
-    /**
-     * 组件的属性列表
-     */
     properties: {
         data: Object
     },
@@ -10,11 +7,9 @@ Component({
         tags: Array
     },
 
-    // sku
-    // sku-controller
-
     observers: {
         data: function (data) {
+    
             if (!data) {
                 return
             }
@@ -22,15 +17,13 @@ Component({
                 return
             }
             const tags = data.tags.split('$')
+            console.log(tags)
             this.setData({
                 tags
             })
         }
     },
 
-    /**
-     * 组件的方法列表
-     */
     methods: {
         onImgLoad(event) {
             const {width, height} = event.detail
@@ -45,8 +38,5 @@ Component({
                 url:`/pages/detail/detail?pid=${pid}`
             })
         }
-        //业务型组件
-        //通用型组件
-        //EventChannel
     }
 })

@@ -1,4 +1,3 @@
-/* components/spu-preview/index.wxss */
 
 .container {
     width: 340rpx;

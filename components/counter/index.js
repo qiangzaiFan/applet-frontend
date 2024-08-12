@@ -21,6 +21,23 @@ Component({
         }
     },
 
+    lifetimes:{
+        attached(){
+            this.setData({
+
+            })
+        }
+    },
+
+    observers:{
+        'count,min,max':function (count,min,max) {
+            console.log(count,min,max)
+        },
+        // 'min':function (min) {
+        //    console.log(min)
+        // }
+    },
+
     /**
      * 组件的初始数据
      */

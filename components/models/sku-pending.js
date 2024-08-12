@@ -1,10 +1,6 @@
 /**
- * @作者 阿强
- *
- * @开源项目 $ http://7yue.pro
- * @免费专栏 $ http://course.7yue.pro
- * @我的课程 $ http://imooc.com/t/4294850
- * @创建时间 2024-11-01 17:48
+ *   @作者 强仔
+
  */
 import { Cell } from './cell'
 import { Joiner } from '../../utils/joiner'

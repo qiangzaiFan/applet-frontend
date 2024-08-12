@@ -31,18 +31,12 @@
     display: flex;
     width: 346rpx;
     height: 522rpx;
-    border-right: 2rpx solid #ccc;
 }
 
 .right-size{
     width: 400rpx;
     height: 260rpx;
     display: flex;
-    
-}
-
-.right-size-top{
-  border-bottom: 2rpx solid #ccc;
 }
 
 

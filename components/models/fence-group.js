@@ -1,6 +1,6 @@
 /**
- * @作者 阿强
- * @创建时间 2024-10-21 07:17
+ *   @作者 强仔
+ * @创建时间 2019-10-21 07:17
  */
 import { Matrix } from './matrix'
 import { Fence } from './fence'

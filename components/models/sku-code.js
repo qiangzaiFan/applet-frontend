@@ -1,8 +1,5 @@
 /**
- * @作者 阿强
- *
-
- * @创建时间 2024-10-28 04:12
+ *   @作者 强仔
  */
 import { combination } from '../../utils/util'
 
