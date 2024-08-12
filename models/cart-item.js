@@ -1,9 +1,5 @@
 /**
  *   @作者 强仔
-  
-  
-  
-  
  */
 
 class CartItem {

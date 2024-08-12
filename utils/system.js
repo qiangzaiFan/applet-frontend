@@ -1,9 +1,5 @@
 /**
  *   @作者 强仔
-  
-  
-  
-  
  */
 import { promisic } from './util'
 import { px2rpx } from '../miniprogram_npm/lin-ui/utils/util'

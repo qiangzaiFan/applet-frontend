@@ -1,10 +1,6 @@
 /**
  *   @作者 强仔
   
-  
-  
-  
-  
  */
 
 class OrderException extends Error {
