@@ -14,10 +14,7 @@ Page({
     themeA: null,
     themeE: null,
     bannerB: null,
-    bannerBImgList: [
-      '../../imgs/home/topBannerCompress2.png',
-      '../../imgs/home/topBannerCompress1.png'
-    ],
+    bannerBImgList: ['../../imgs/home/topBannerCompress2.png', '../../imgs/home/topBannerCompress1.png'],
     grid: [],
     activityD: null,
     spuPaging: null,
@@ -30,13 +27,14 @@ Page({
   },
 
   async initBottomSpuList() {
-    // const paging = SpuPaging.getLatestPaging()
-    // this.data.spuPaging = paging
+    const paging = SpuPaging.getLatestPaging()
+    this.data.spuPaging = paging
     // const data = await paging.getMoreData()
     // if (!data) {
     //   return
     // }
     // wx.lin.renderWaterFlow(data.items)
+    wx.lin.renderWaterFlow(paging.items)
   },
 
   async initAllData() {
