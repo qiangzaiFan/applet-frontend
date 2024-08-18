@@ -17,7 +17,7 @@ Component({
                 return
             }
             const tags = data.tags.split('$')
-            console.log(tags)
+            // console.log('----tags--,',tags)
             this.setData({
                 tags
             })

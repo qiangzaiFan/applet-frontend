@@ -3,11 +3,13 @@
  * @创建时间 2024-10-21 17:45
  */
 import { Http } from '../utils/http'
+import { data as spuData } from '../assets/json/wxshop/with_spu.js'
+
 
 class Spu {
   static isNoSpec(spu) {
-    if (spu.sku_list.length === 1 && spu.sku_list[0].specs.length === 0) {
-      return true
+    if (spu.sku_list && spu.sku_list.length === 1 && spu.sku_list[0].specs.length === 0) {
+      return true 
     }
     return false
   }
@@ -27,9 +29,14 @@ class Spu {
   // 1-40 1-60
 
   static getDetail(id) {
-    return Http.request({
-      url: `spu/id/${id}/detail`
-    })
+    const data = JSON.parse(JSON.stringify(spuData))||[]
+    console.log('----data,',data);
+    const list = data.spu_list
+    const newData = list.find((item)=>item[0])
+    return newData
+    // return Http.request({
+    //   url: `spu/id/${id}/detail`
+    // })
   }
 }
 

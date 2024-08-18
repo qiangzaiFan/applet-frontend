@@ -11,6 +11,7 @@ class FenceGroup {
   fences = []
 
   constructor(spu) {
+    console.log('--fence---spu,',spu);
     this.spu = spu
     this.skuList = spu.sku_list
   }
