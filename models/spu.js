@@ -5,11 +5,10 @@
 import { Http } from '../utils/http'
 import { data as spuData } from '../assets/json/wxshop/with_spu.js'
 
-
 class Spu {
   static isNoSpec(spu) {
     if (spu.sku_list && spu.sku_list.length === 1 && spu.sku_list[0].specs.length === 0) {
-      return true 
+      return true
     }
     return false
   }
@@ -29,10 +28,11 @@ class Spu {
   // 1-40 1-60
 
   static getDetail(id) {
-    const data = JSON.parse(JSON.stringify(spuData))||[]
-    const list = data.spu_list[0]
-    console.log('--spu---list-,',list);
-    return list
+    const data = JSON.parse(JSON.stringify(spuData)) || []
+    const list = data.spu_list
+    const newData = list[0]
+    console.log('----newData,', newData)
+    return newData
     // return Http.request({
     //   url: `spu/id/${id}/detail`
     // })
