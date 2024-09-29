@@ -13,8 +13,10 @@ class SkuCode {
     this._splitToSegments()
   }
 
+  // code码分割成片段
   _splitToSegments() {
     // 2$1-44#3-9#4-14
+    //获取sku的所有路径
 
     const spuAndSpec = this.code.split('$')
     this.spuId = spuAndSpec[0]
@@ -27,6 +29,7 @@ class SkuCode {
       const newSegments = segments.map(segs => {
         return segs.join('#')
       })
+      // console.log('---newSegments,',newSegments);
       this.totalSegments = this.totalSegments.concat(newSegments)
     }
     // 尽量少写显式的for循环

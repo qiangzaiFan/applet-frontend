@@ -30,10 +30,9 @@ class Spu {
 
   static getDetail(id) {
     const data = JSON.parse(JSON.stringify(spuData))||[]
-    console.log('----data,',data);
-    const list = data.spu_list
-    const newData = list.find((item)=>item[0])
-    return newData
+    const list = data.spu_list[0]
+    console.log('--spu---list-,',list);
+    return list
     // return Http.request({
     //   url: `spu/id/${id}/detail`
     // })
