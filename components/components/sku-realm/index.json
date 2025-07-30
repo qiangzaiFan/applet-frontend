@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "z-sku-fence": "/components/sku-fence/index",
-    "z-counter": "/components/counter/index"
-  }
-}

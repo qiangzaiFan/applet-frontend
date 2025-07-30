@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "z-spu-preview-h": "/components/spu-preview-h/index"
-  }
-}
