@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "z-check-box": "/components/check-box/index",
+    "z-cart-item": "/components/cart-item/index"
+  }
+}
